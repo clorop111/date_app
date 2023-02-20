@@ -1,24 +1,56 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users　テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| name               | string | null: false               |
+| email              | string | null: false, unique: true |
+| encrypted_password | string | null: false               |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :diaries
+- has_many :favorites
 
-* Configuration
+## diaries　テーブル
 
-* Database creation
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| title              | string     | null: false                    |
+| good_thing         | text       | null: false                    |
+| not_good           | text       | null: false                    |
+| things_to_do       | text       | null: false                    |
+| goal               | text       | null: false                    |
+| image              | text       | null: false                    |
+| day                | text       | null: false                    |
+| genre_id           | integer    | null: false                    |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- belongs_to :user
+- belongs_to :category
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## favorites テーブル
 
-* ...
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| user               | references | null: false, foreign_key: true |
+| dairy              | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :diary
+
+
+## categories テーブル
+
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| dairy              | references | null: false, foreign_key: true |
+
+### Association
+
+- has_many :diaries
