@@ -13,7 +13,7 @@
 }
 
 .date-icon {
-  width: 15vw;
+  width: 20vw;
   margin-right: 10vw;
 }
 .nav {
@@ -35,16 +35,28 @@
 .logout {
   text-decoration: none;
   color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 14px;
 }
 
 .login {
   text-decoration: none;
-  /* line-height: 32px; */
   margin-right: 3vw;
   color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 14px;
 }
 
 .sign-up {
   text-decoration: none;
   color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 14px;
+}
+
+.new-date {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 14px;
 }

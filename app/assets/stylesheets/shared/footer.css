@@ -4,5 +4,39 @@
   width: 100vw;
   padding: 5vh 0;
   color: #FFF;
-  text-align: center;
+  
+  
+}
+
+.footer-contents{
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  width: 100vw;
+  padding: 2vh 15vw;
+}
+
+.footer-logo-white {
+  margin: 20px 0;
+}
+
+.footer-sns-logo {
+  width: 200px;
+}
+
+.instagram-sns-white {
+  width: 50px;
+  margin: 50px 15px 20px 15px;
+}
+
+.twitter-sns-white {
+  width: 50px;
+  margin: 50px 15px 22px 15px ;
+}
+
+.footer-sns-logo>p {
+  font-size: 14px;
+  margin: 0 60px 0 auto;
+  height: 100px;
+  width:  100px;
 }
