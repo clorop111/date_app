@@ -1,42 +1,43 @@
 
 .footer{
-  background-color: #707070;
   width: 100vw;
   padding: 5vh 0;
   color: #FFF;
-  
-  
 }
 
 .footer-contents{
   display: flex;
   justify-content: space-between;
-  height: 150px;
   width: 100vw;
   padding: 2vh 15vw;
+  background-color: #707070;
 }
 
 .footer-logo-white {
   margin: 20px 0;
 }
 
-.footer-sns-logo {
+.footer-sns-logos {
   width: 200px;
+  margin-top: 40px;
+}
+
+.footer-sns-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .instagram-sns-white {
   width: 50px;
-  margin: 50px 15px 20px 15px;
 }
 
 .twitter-sns-white {
   width: 50px;
-  margin: 50px 15px 22px 15px ;
+  margin-left: 20px;
 }
 
-.footer-sns-logo>p {
+.footer-sns-logos>p {
   font-size: 14px;
-  margin: 0 60px 0 auto;
-  height: 100px;
-  width:  100px;
+  text-align: center;
 }
