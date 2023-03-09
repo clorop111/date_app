@@ -12,8 +12,13 @@
   flex-direction: column;
 }
 
+.header_bar>a{
+  display:inline-block
+}
+
+
 .date-icon {
-  width: 20vw;
+  width: 30vw;
   margin-right: 10vw;
 }
 .nav {
