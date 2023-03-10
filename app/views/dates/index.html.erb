@@ -13,9 +13,37 @@
 
 <%#/画面上部の帯%>
 
+
+<%#最新日記表示%>
+  <div class='date-contents'>
+    <h2 class="title">最新日記</h2>
+  </div>
+
+  <ul class='date-lists'>
+
+          <div class='date-img-content'>
+            <%= image_tag 'item-sample.jpeg', class: "dete-img"  %>
+          </div>
+          <div class='dete-info'>
+              <h3 class='date-name'>
+                <%= 'title' %>
+              </h3>
+              <div class='item-price'>
+                <span><%= 'day' %></span>
+                <div class='star-btn'>
+                  <%= image_tag "star.png", class:"star-icon" %>
+                  <span class='star-count'>0</span>
+                </div>
+              </div>
+          </div>
+
+
+  </ul>
+<%#/最新日記表示%>
+
 </div>
 
 
 <%= render "shared/footer" %>
 
-
+<div class=''></div>
