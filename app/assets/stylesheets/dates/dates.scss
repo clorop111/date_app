@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+.title-contents {
+  width: 100vw;
+  background-image: image-url('date-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10vh 15vw;
+  color: #fff;
+}
+
+.servis-title {
+  font-size: 6.5vh;
+}
+
+.servis-explain {
+  font-size: 2.5vh;
+}
+
+/* 投稿一覧 */
+
+.date-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.date-contents>.title {
+  font-size: 4vh;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.date-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.date-lists>.list {
+  width: 35vh;
+  list-style: none
+}
+
+
+.date-img-content {
+  position: relative;
+}
+
+.date-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+.date-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.date-name {
+  font-size: 2vh;
+}
+
+.date-days {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-btn {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  width: 3vh;
+  height: 3vh;
+}
+
+
+
+/* //投稿一覧 */
